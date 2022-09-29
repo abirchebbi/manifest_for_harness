@@ -16,16 +16,16 @@ kind: Deployment
 metadata:
     name: app-deployment
     labels:
-        app: python-demo-app
+        app: demo-python-app
 spec:
     replicas: 2
     selector:
         matchLabels:
-            app: python-demo-app
+            app: demo-python-app
     template:  
         metadata:
             labels:
-                app: python-demo-app
+                app: demo-python-app
         spec:
             containers:
             - name: python-app
