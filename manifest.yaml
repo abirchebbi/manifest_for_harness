@@ -2,14 +2,16 @@ apiVersion: v1
 kind: Service
 metadata:
     name: app-service
+    labels: 
+        app: demo-python-app
+
 spec:
     ports:
         - protocol: TCP 
           port: 80
           targetPort: 5000 
     selector: 
-        labels:
-            app: demo-python-app
+        app: demo-python-app
 ---
 apiVersion: apps/v1
 kind: Deployment
