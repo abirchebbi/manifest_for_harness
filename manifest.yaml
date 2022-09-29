@@ -4,7 +4,6 @@ metadata:
     name: app-service
     labels: 
         app: demo-python-app
-
 spec:
     ports:
         - protocol: TCP 
