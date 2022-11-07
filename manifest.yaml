@@ -19,7 +19,7 @@ metadata:
     labels:
         app: demo-python-app
 spec:
-    replicas: 2
+    replicas: 6
     selector:
         matchLabels:
             app: demo-python-app
